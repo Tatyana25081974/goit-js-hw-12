@@ -2,6 +2,7 @@ import{a as S,S as b}from"./assets/vendor-DxnlFHFt.js";(function(){const o=docum
       <div class="photo-card">
         <a href="${e}" class="gallery-item">
           <img src="${s}" alt="${t}" loading="lazy" />
+          </a>
           <div class="info">
             <p>
                 <span>Likes</span>
@@ -24,6 +25,6 @@ import{a as S,S as b}from"./assets/vendor-DxnlFHFt.js";(function(){const o=docum
                 <span>${v}</span>
             </p>
           </div>
-        </a>
+        </div>
       `).join("");o.insertAdjacentHTML("beforeend",n)}function E(){const r=document.querySelector(".gallery");r.innerHTML=""}const P=document.querySelector(".search-form"),d=document.querySelector(".load-more"),$=document.querySelector(".gallery"),m=document.querySelector(".loader");let c="",a=1;const u=15;let l=0;const h=new b(".gallery a");function O(){m.classList.remove("hidden")}function y(){m.classList.add("hidden")}P.addEventListener("submit",async r=>{if(r.preventDefault(),c=r.currentTarget.elements.searchQuery.value.trim(),!!c){a=1,E(),d.classList.add("hidden");try{const o=await p(c,a,u);if(l=o.totalHits,l===0){alert("Sorry, no images match your search query. Please try again.");return}f(o.hits),h.refresh(),a*u<l&&d.classList.remove("hidden")}catch(o){console.error("Error during search:",o)}finally{y()}}});d.addEventListener("click",async()=>{a+=1,O();try{const r=await p(c,a,u);f(r.hits),h.refresh(),a*u>=l?(d.classList.add("hidden"),alert("We're sorry, but you've reached the end of search results.")):H()}catch(r){console.error("Error loading more images:",r)}finally{y()}});function H(){const{height:r}=$.firstElementChild.getBoundingClientRect();window.scrollBy({top:r*2,behavior:"smooth"})}
 //# sourceMappingURL=index.js.map
