@@ -1,5 +1,5 @@
-import { fetchImages } from './pixabay-api'; //функція для отримання зображень із Pixabay API.
-import { renderImageGallery, clearGallery } from './render-functions';//функція для створення HTML-розмітки галереї.,функція для очищення галереї.
+import { fetchImages } from './js/pixabay-api'; //функція для отримання зображень із Pixabay API.
+import { renderImageGallery, clearGallery } from './js/render-functions';//функція для створення HTML-розмітки галереї.,функція для очищення галереї.
 import SimpleLightbox from 'simplelightbox';//бібліотека для створення модального вікна зі збільшеним зображенням.
 import 'simplelightbox/dist/simple-lightbox.min.css';// стилі для бібліотеки SimpleLightbox.
 import iziToast from 'izitoast';
