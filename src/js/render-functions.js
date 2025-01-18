@@ -6,6 +6,7 @@ export function renderImageGallery(images) {
       <div class="photo-card">
         <a href="${largeImageURL}" class="gallery-item">
           <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+          </a>
           <div class="info">
             <p>
                 <span>Likes</span>
@@ -28,7 +29,7 @@ export function renderImageGallery(images) {
                 <span>${downloads}</span>
             </p>
           </div>
-        </a>
+        </div>
       `
     )
     .join('');
