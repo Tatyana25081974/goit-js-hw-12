@@ -2,6 +2,9 @@ import { fetchImages } from './pixabay-api'; //функція для отрим�
 import { renderImageGallery, clearGallery } from './render-functions';//функція для створення HTML-розмітки галереї.,функція для очищення галереї.
 import SimpleLightbox from 'simplelightbox';//бібліотека для створення модального вікна зі збільшеним зображенням.
 import 'simplelightbox/dist/simple-lightbox.min.css';// стилі для бібліотеки SimpleLightbox.
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 
 const form = document.querySelector('.search-form');//знаходимо HTML-елемент форми для пошуку зображень за класом .search-form
 const loadMoreBtn = document.querySelector('.load-more');//знаходимо кнопку "Load more" за класом .load-more
