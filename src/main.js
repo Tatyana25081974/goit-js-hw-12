@@ -64,7 +64,7 @@ form.addEventListener('submit', async (event) => {
   } catch (error) {
     console.error('Error during search:', error);
   } finally {
-    hideLoader(); // Ховаємо спінер після завершення запиту.
+    hideLoader(); // Ховаємо лоадер після завершення запиту.
   }
 });
 
@@ -90,7 +90,7 @@ loadMoreBtn.addEventListener('click', async () => {
   } catch (error) {
     console.error('Error loading more images:', error);
   } finally {
-    hideLoader(); // Ховаємо спінер після завершення запиту.
+    hideLoader(); // Ховаємо лоадер після завершення запиту.
   }
 });
 //Плавне прокручування сторінки
