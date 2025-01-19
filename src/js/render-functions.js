@@ -1,5 +1,6 @@
 export function renderImageGallery(images) {
   const gallery = document.querySelector('.gallery');
+  
   const markup = images
     .map(
       ({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `
