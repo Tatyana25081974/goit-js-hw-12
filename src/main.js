@@ -29,6 +29,8 @@ function showLoader() {
 function hideLoader() {
   loader.classList.add('hidden'); // Ховаємо лоадер
 }
+
+
 //Обробка події submit форми
 //слухаємо подію submit на формі (тобто коли користувач натискає "Search").Коли форма відправляється, виконується функція
 form.addEventListener('submit', async (event) => {
